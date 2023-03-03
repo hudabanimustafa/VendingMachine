@@ -1,0 +1,49 @@
+ # Vending Machine
+
+ // Create By Huda BM .
+ start by creating a use case:-
+
+
+ 1 - The vending machine displays a welcome message with
+ all products and prices .
+
+ 2 - The vending machine asks the user to select a product .
+
+ 3 - The Vending machine asks the user to enter coins. The coins accepted
+     are 5,10,20,50,100 JOD\$.
+
+ 4 - The Vending machine calculates the total money inserted .
+
+ 5 - Calculate the chan e amount .
+
+ 6 - Calculate the minimum number of coins to return.
+
+ 7 - Display the change amount and coins to the user.
+
+ -The Main class will start the program and coordinate the communication between the user and the VendingMachineInterface.
+
+ -The VendingMachineInterface is the class that defines how to communicate with the user. In this case, we will communicate using text through the console;
+  therefore, the class will display text messages and receive user text input, like the product selected or the coins.
+
+-Another important class is the Calculator. The calculator class will carry out operations to work out the total
+amount inserted and the minimum coins to return a change amount .
+
+-Next, we will create a VendingController class that coordinates the communication between the interface and the calculator.
+This class helps decouple the interface from the rest of the program. The interface doesn’t need to know how to calculate the change
+ it only needs to know where to request it .
+
+ -The Coin class will represent all coins accepted by the machine: 5 Dollar, 10 Dollar,
+  20 Dollar, 50 Dollar, and 100 dollar.
+
+  -Next, since we will receive a bunch of coins and return a bunch of coins, we could represent a class instead of passing
+   around an array of numbers representing the number of coins. This change will make communication between classes simpler.
+   We will call this class CoinBundle .
+
+   -And finally, the Product class that will define the product that this vending machine offers. In this instance,
+    our vending machine sells Twix chocolate bars, Coke, Water, and Sandwiches. This class has two pieces of information:
+    the selection number to buy the product and the price .
+
+
+
+
+
